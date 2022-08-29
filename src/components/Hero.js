@@ -1,4 +1,5 @@
 import React from 'react'
+import IllustrationLogo from '../images/illustration-intro.svg'
 
 const Main = () => {
   return (
@@ -16,11 +17,15 @@ const Main = () => {
                     <p className='max-w-sm text-center text-darkGrayishBlue md:text-left'>
                     Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
                     </p>
+
+                    <div className='flex justify-center md:justify-start'>
+                      <a href='#' className='p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight'>Get Started</a>
+                    </div>
                 </div>
 
                 {/* Image */}
-                <div>
-
+                <div className='md:w-1/2'>
+                    <img src={IllustrationLogo} alt='illustration-intro.svg'></img>
                 </div>
            </div>
        </section>
