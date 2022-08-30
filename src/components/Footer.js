@@ -1,6 +1,10 @@
 import React from 'react'
 import LogoWhite from '../images/logo-white.png'
 import Facebook from '../images/icon-facebook.svg'
+import Youtube from '../images/icon-youtube.svg'
+import Twitter from '../images/icon-twitter.svg'
+import Pinterest from '../images/icon-pinterest.svg'
+import Instagram from '../images/icon-instagram.svg'
 
 const Footer = () => {
   return (
@@ -23,6 +27,25 @@ const Footer = () => {
                             <img src={Facebook} alt='icon-facebook.svg' className='h-8'></img>
                         </a>
 
+                         {/* Link 2 */}
+                         <a href='#'>
+                            <img src={Youtube} alt='icon-facebook.svg' className='h-8'></img>
+                        </a>
+
+                         {/* Link 3 */}
+                         <a href='#'>
+                            <img src={Twitter} alt='icon-facebook.svg' className='h-8'></img>
+                        </a>
+
+                         {/* Link 4 */}
+                         <a href='#'>
+                            <img src={Pinterest} alt='icon-facebook.svg' className='h-8'></img>
+                        </a>
+
+                         {/* Link 5 */}
+                         <a href='#'>
+                            <img src={Instagram} alt='icon-facebook.svg' className='h-8'></img>
+                        </a>
 
                     </div>
                 </div>
