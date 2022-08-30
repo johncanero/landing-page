@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Feature from './components/Feature';
 import Testimonials from './components/Testimonials';
 import CallToAction from './components/CallToAction';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Feature />
         <Testimonials />
         <CallToAction />
+        <Footer />
     </div>
   );
 }
