@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Feature from './components/Feature';
 import Testimonials from './components/Testimonials';
+import CallToAction from './components/CallToAction';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Hero />
         <Feature />
         <Testimonials />
+        <CallToAction />
     </div>
   );
 }
