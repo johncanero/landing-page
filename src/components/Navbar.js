@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react';
 import logo from '../images/logo.svg'
 
 // const btn = document.getElementById('menu-btn')
@@ -11,6 +12,18 @@ import logo from '../images/logo.svg'
 // })
 
 const Navbar = () => {     
+    const [open, setOpen] = useState(false);
+
+    const btn = document.getElementById('menu-btn')
+    const nav = document.getElementById('menu')
+
+    const handleMenuClick = () => {
+      setOpen((prev) => !prev);
+      btn.classList.toggle('open')
+      nav.classList.toggle('flex')
+      nav.classList.toggle('hidden')
+    };
+
   return (
     <div>
         <nav className='relative container mx-auto p-6'>
@@ -37,9 +50,11 @@ const Navbar = () => {
                 </div>
 
                 {/* Hambuger Icon */}
-                <button 
-                    id='menu-btn' 
-                    className='block hamburger md:hidden focus:outline-none'>
+                <button
+                    id='menu-btn'
+                    className={`block hamburger md:hidden focus:outline-none ${open && 'open'}`}
+                    onClick={() => handleMenuClick()}
+                     >
                     <span className='hamburger-top'></span>
                     <span className='hamburger-middle'></span>
                     <span className='hamburger-bottom'></span>
