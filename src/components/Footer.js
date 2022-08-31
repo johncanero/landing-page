@@ -27,27 +27,27 @@ const Footer = () => {
                     {/* Social Links Container*/}
                     <div className='flex justify-center space-x-4'>
                         {/* Link 1 */}
-                        <a href='#'>
+                        <a href='/'>
                             <img src={Facebook} alt='icon-facebook.svg' className='h-8'></img>
                         </a>
 
                          {/* Link 2 */}
-                         <a href='#'>
+                         <a href='/'>
                             <img src={Youtube} alt='icon-facebook.svg' className='h-8'></img>
                         </a>
 
                          {/* Link 3 */}
-                         <a href='#'>
+                         <a href='/'>
                             <img src={Twitter} alt='icon-facebook.svg' className='h-8'></img>
                         </a>
 
                          {/* Link 4 */}
-                         <a href='#'>
+                         <a href='/'>
                             <img src={Pinterest} alt='icon-facebook.svg' className='h-8'></img>
                         </a>
 
                          {/* Link 5 */}
-                         <a href='#'>
+                         <a href='/'>
                             <img src={Instagram} alt='icon-facebook.svg' className='h-8'></img>
                         </a>
                     </div>
@@ -56,16 +56,16 @@ const Footer = () => {
                 {/* List */}
                 <div className='flex justify-around space-x-32 md:space-x-4 lg:space-x-32'>
                     <div className='flex flex-col space-y-3 text-white'>
-                        <a href='#' className='hover:text-brightRed'>Home</a>
-                        <a href='#' className='hover:text-brightRed'>Pricing</a>
-                        <a href='#' className='hover:text-brightRed'>Products</a>
-                        <a href='#' className='hover:text-brightRed'>About</a>
+                        <a href='/' className='hover:text-brightRed'>Home</a>
+                        <a href='/' className='hover:text-brightRed'>Pricing</a>
+                        <a href='/' className='hover:text-brightRed'>Products</a>
+                        <a href='/' className='hover:text-brightRed'>About</a>
                     </div>
 
                     <div className='flex flex-col space-y-3 text-white'>
-                        <a href='#' className='hover:text-brightRed'>Careers</a>
-                        <a href='#' className='hover:text-brightRed'>Community</a>
-                        <a href='#' className='hover:text-brightRed'>Privacy Policy</a>
+                        <a href='/' className='hover:text-brightRed'>Careers</a>
+                        <a href='/' className='hover:text-brightRed'>Community</a>
+                        <a href='/' className='hover:text-brightRed'>Privacy Policy</a>
                     </div>
                 </div>
 
