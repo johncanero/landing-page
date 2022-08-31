@@ -1,7 +1,16 @@
 import React from 'react'
 import logo from '../images/logo.svg'
 
-const Navbar = () => {
+const btn = document.getElementById('menu-btn')
+const nav = document.getElementById('menu')
+
+btn.addEventListener('click', () => {
+  btn.classList.toggle('open')
+  nav.classList.toggle('flex')
+  nav.classList.toggle('hidden')
+})
+
+const Navbar = () => {     
   return (
     <div>
         <nav className='relative container mx-auto p-6'>
@@ -27,10 +36,10 @@ const Navbar = () => {
                     <a href='#' className='hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block'>Get Started</a>
                 </div>
 
-                {/* Hambuger Menu */}
+                {/* Hambuger Icon */}
                 <button 
                     id='menu-btn' 
-                    lassName='block hamburger md:hidden focus:outline-none'>
+                    className='block hamburger md:hidden focus:outline-none'>
 
                     <span className='hamburger-top'></span>
                     <span className='hamburger-middle'></span>
@@ -40,12 +49,14 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             <div className='md:hidden'>
-                <div id='menu' className='absolute flex flex-col items-center hidden self-end  py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md'>
-                    <a href='#'>Pricing</a>
-                    <a href='#'>Product</a>
-                    <a href='#'>About</a>
-                    <a href='#'>Careers</a>
-                    <a href='#'>Community</a>
+                <div 
+                    id='menu' 
+                    className='absolute flex-col items-center hidden self-end  py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md'>
+                        <a href='#'>Pricing</a>
+                        <a href='#'>Product</a>
+                        <a href='#'>About</a>
+                        <a href='#'>Careers</a>
+                        <a href='#'>Community</a>
                 </div>
             </div>
         </nav>
