@@ -46,9 +46,42 @@ const Footer = () => {
                          <a href='#'>
                             <img src={Instagram} alt='icon-facebook.svg' className='h-8'></img>
                         </a>
-
                     </div>
                 </div>
+
+                {/* List */}
+                <div className='flex justify-around space-x-32 md:space-x-4 lg:space-x-32'>
+                    <div className='flex flex-col space-y-3 text-white'>
+                        <a href='#' className='hover:text-brightRed'>Home</a>
+                        <a href='#' className='hover:text-brightRed'>Pricing</a>
+                        <a href='#' className='hover:text-brightRed'>Products</a>
+                        <a href='#' className='hover:text-brightRed'>About</a>
+                    </div>
+
+                    <div className='flex flex-col space-y-3 text-white'>
+                        <a href='#' className='hover:text-brightRed'>Careers</a>
+                        <a href='#' className='hover:text-brightRed'>Community</a>
+                        <a href='#' className='hover:text-brightRed'>Privacy Policy</a>
+                    </div>
+                </div>
+
+                {/* Input Container */}
+                <div className='flex flex-col justify-between'>
+                    <form>
+                        <div className='flex space-x-3'>
+                            <input 
+                                type='text'
+                                className='flex-1 px-4 rounded-full focus:outline-none'
+                                placeholder='Updated your inbox'>
+                            </input>
+                            <button className='px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none'>
+                                Go
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                
             </div>
         </footer>
     </div>
