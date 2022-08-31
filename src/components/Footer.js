@@ -15,6 +15,10 @@ const Footer = () => {
                 {/* Logo and Social Links Container */}
                 <div className='flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start'>
 
+                    <div className='mx-auto my-6 text-center text-white md:hidden'>
+                        Copyright &copy; 2022, ALl Rights Reserved
+                    </div>
+
                     {/* Logo */}
                     <div>
                         <img src={LogoWhite} alt='logo.svg' className='h-8'></img>
@@ -79,6 +83,10 @@ const Footer = () => {
                             </button>
                         </div>
                     </form>
+
+                    <div className='hidden text-white md:block'>
+                        Copyright &copy; 2022, ALl Rights Reserved
+                    </div>
                 </div>
 
                 
