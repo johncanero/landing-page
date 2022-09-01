@@ -18,7 +18,8 @@
 # Manage Landing Page Website
 
 This is the Manage Landing Page Website Project Challenge by Frontend Mentor. It
-is made with Tailwind CSS Utility Framework and React JS. A Landing Website Frontend. 
+is made with Tailwind CSS Utility Framework and React JS. A Landing Website
+Frontend.
 
 Manage Landing Page: John Cañero
 Frontend Mentor Challenge - Manage Landing Page
