@@ -1,7 +1,7 @@
 import React from 'react'
 import IllustrationLogo from '../images/illustration-intro.svg'
 
-const Main = () => {
+const Hero = () => {
   return (
     <div>
        <section id='hero'>
@@ -33,4 +33,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default Hero
